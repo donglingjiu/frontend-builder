@@ -52,31 +52,6 @@
 
 ---
 
-## San.js（百度内部框架）
-
-**路由文件**
-- 通常基于自研路由或 `san-router`
-- 路由配置：`src/router/index.js`，路由项含 `path`、`Component`（大写，直接引用组件类）
-- 注册方式：`router.add({ path, Component })` 或配置数组
-
-**菜单/导航**
-- 常见于 `src/config/nav.js`、`src/layout/sidebar.js`
-- 字段常见：`{ name, path, icon, children }`
-
-**样式**
-- 全局变量：`src/styles/variables.less`，颜色以 `@` 前缀定义（Less 变量）
-- 类名前缀：项目级统一前缀（如 `csc-`、`bui-`、`noah-`），从全局样式文件确认
-- 组件样式：独立 `.less` 文件，与组件文件同目录
-
-**组件注册**
-- San 组件：`components: { 'ui-button': Button }` 在组件的 `static components` 中声明
-- 模板语法：`html` tagged template（`` html`<div>...</div>` ``），不是 JSX 也不是 `.vue` SFC
-- 事件绑定：`on-click="handleClick"` 而非 `@click` 或 `onClick`
-- 数据绑定：`{= value =}`（双向）或 `{{ value }}`（单向）
-
-**探索重点**：San.js 与 Vue/React 差异最大，**必须**读参考页面源码确认模板语法和事件写法，不能凭其他框架经验推断。
-
----
 
 ## Angular
 
