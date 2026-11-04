@@ -46,3 +46,8 @@ description: 生成项目级生产质量的前端代码与界面。何时使用�
 3. 工程红线全过：零新增依赖、导入复制、样式无魔法数字、无自造图标、布局对齐？
 4. 响应式与基础可访问性处理了？
 5. 访问地址真实可用（沙箱环境绝不报 localhost）？
+
+## 交付前清单（引用）
+
+- 纯前端项目：交付前逐项核对 references/pure-frontend-checklist.md（架构/质量/交付三层）。
+- AI 生成代码：先过红线扫描（AutoDev/scripts/redline-check.sh 或 web-delivery-team/scripts/redline-check.js），未过线禁止交付。
